@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="https://webs.curp.gob.mx/WebServicesConsulta/services/ConsultaPorCurpService?wsdl" uri="wsdl/webs.curp.gob.mx/WebServicesConsulta/services/ConsultaPorCurpService.wsdl"/>
+    <system systemId="http://localhost:8084/WEBCURPSERVICE/CURPSERVICE?wsdl" uri="wsdl/localhost_8084/WEBCURPSERVICE/CURPSERVICE.wsdl"/>
+    <system systemId="http://localhost:8084/WEBCURPSERVICE/CURPSERVICE?xsd=1" uri="wsdl/localhost_8084/WEBCURPSERVICE/CURPSERVICE.xsd_1.xsd"/>
+    <system systemId="http://aplicaciones.edugem.gob.mx:80/WEBCURPSERVICE/CURPSERVICE?wsdl" uri="wsdl/aplicaciones.edugem.gob.mx_80/WEBCURPSERVICE/CURPSERVICE.wsdl"/>
+    <system systemId="http://aplicaciones.edugem.gob.mx:80/WEBCURPSERVICE/CURPSERVICE?xsd=1" uri="wsdl/aplicaciones.edugem.gob.mx_80/WEBCURPSERVICE/CURPSERVICE.xsd_1.xsd"/>
+</catalog>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://mx.gob.edugem/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://mx.gob.edugem/">
+
+<xs:element name="CURPStruct" type="tns:curpStruct" />
+
+<xs:element name="consultacurp" type="tns:consultacurp" />
+
+<xs:element name="consultacurpResponse" type="tns:consultacurpResponse" />
+
+<xs:complexType name="consultacurp">
+<xs:sequence>
+<xs:element name="curp" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultacurpResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:curpStruct" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="curpStruct">
+<xs:sequence>
+<xs:element name="apellido1" type="xs:string" minOccurs="0" />
+<xs:element name="apellido2" type="xs:string" minOccurs="0" />
+<xs:element name="CURP" type="xs:string" minOccurs="0" />
+<xs:element name="cveEntidadNac" type="xs:string" minOccurs="0" />
+<xs:element name="fechNac" type="xs:string" minOccurs="0" />
+<xs:element name="nacionalidad" type="xs:string" minOccurs="0" />
+<xs:element name="nombres" type="xs:string" minOccurs="0" />
+<xs:element name="sexo" type="xs:string" minOccurs="0" />
+<xs:element name="statusCurp" type="xs:string" minOccurs="0" />
+</xs:sequence>
+<xs:attribute name="statusOper" type="xs:string" />
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="curp" extends="struts-default">
+        <action name="miinicio" class="actioncurp.iniciocurp" method="miinicio">
+            <result name="SUCCESS">/pages/curp.jsp</result>			              
+            <result name="ERROR">/pages/curp.jsp</result>
+        </action>
+        <action name="buscardatoscurp" class="actioncurp.iniciocurp" method="buscardatoscurp">
+            <result name="SUCCESS">/pages/curp.jsp</result>			              
+            <result name="ERROR">/pages/curp.jsp</result>
+        </action>
+        
+        
+        <action name="miinicio2" class="actioncurp.iniciocurp2" method="miinicio">
+            <result name="SUCCESS">/pages/curp2.jsp</result>			              
+            <result name="ERROR">/pages/curp2.jsp</result>
+        </action>
+        
+        <action name="subiryobtenerarchivo" class="actioncurp.iniciocurp2" method="subiryobtenerarchivo">
+            <result name="xls" type="stream">
+				<param name="inputName">pdf</param>
+				<param name="contentLength">${contentLength}</param>
+				<param name="contentType">application/vnd.ms-excel</param>
+				<param name="contentDisposition">inline;filename="${contentName}"</param>
+				<param name="allowCaching">false</param>
+            </result>  
+            <result name="SUCCESS">/pages/curp2.jsp</result>			              
+            <result name="ERROR">/pages/curp2.jsp</result>
+        </action>
+        <action name="miinicio3" class="actioncurp.iniciocurp2" method="miinicio3">
+            <result name="SUCCESS">/pages/curp3.jsp</result>			              
+            <result name="ERROR">/pages/curp3.jsp</result>
+        </action>
+        
+        <action name="buscarcurps" class="actioncurp.iniciocurp2" method="buscarcurps">
+            <result name="SUCCESS">/pages/curp31.jsp</result>
+            <result name="TERMINO">/pages/curpok.jsp</result>			              
+            <result name="ERROR">/pages/curp31.jsp</result>
+        </action>
+        
+        <action name="miinicio33" class="actioncurp.iniciocurp2" method="miinicio33">
+            <result name="SUCCESS">/pages/curp33.jsp</result>			              
+            <result name="ERROR">/pages/curp33.jsp</result>
+        </action>
+        
+        <action name="buscarcurps33" class="actioncurp.iniciocurp2" method="buscarcurps33">
+            <result name="SUCCESS">/pages/curp313.jsp</result>
+            <result name="TERMINO">/pages/curpok.jsp</result>			              
+            <result name="ERROR">/pages/curp313.jsp</result>
+        </action>
+        
+        
+        <action name="miinicio4_2" class="actioncurp.iniciocurp2" method="miinicio4">
+            <result name="SUCCESS">/pages/curp4.jsp</result>			              
+            <result name="ERROR">/pages/curp4.jsp</result>
+        </action>
+        
+        <action name="buscarcurps2" class="actioncurp.iniciocurp2" method="buscarcurps2">
+            <result name="SUCCESS">/pages/curp41.jsp</result>
+            <result name="TERMINO">/pages/curpok.jsp</result>			              
+            <result name="ERROR">/pages/curp41.jsp</result>
+        </action>
+        
+        <action name="miinicio5_2" class="actioncurp.iniciocurp2" method="miinicio5">
+            <result name="SUCCESS">/pages/curp5.jsp</result>			              
+            <result name="ERROR">/pages/curp5.jsp</result>
+        </action>
+        
+        <action name="buscarcurps3" class="actioncurp.iniciocurp2" method="buscarcurps3">
+            <result name="SUCCESS">/pages/curp51.jsp</result>
+            <result name="TERMINO">/pages/curpok.jsp</result>			              
+            <result name="ERROR">/pages/curp51.jsp</result>
+        </action>
+        
+        
+        
+        <action name="miinicio6_2" class="actioncurp.iniciocurp2" method="miinicio6">
+            <result name="SUCCESS">/pages/curp6.jsp</result>			              
+            <result name="ERROR">/pages/curp6.jsp</result>
+        </action>
+        
+        <action name="buscarcurps4" class="actioncurp.iniciocurp2" method="buscarcurps4">
+            <result name="SUCCESS">/pages/curp61.jsp</result>
+            <result name="TERMINO">/pages/curpok.jsp</result>			              
+            <result name="ERROR">/pages/curp61.jsp</result>
+        </action>
+        
+        
+        <action name="miinicioasc" class="actioncurp.iniciocurp2" method="miinicio8">
+            <result name="SUCCESS">/pages/curp8.jsp</result>			              
+            <result name="ERROR">/pages/curp8.jsp</result>
+        </action>
+        
+        <action name="buscarcurps8" class="actioncurp.iniciocurp2" method="buscarcurps8">
+            <result name="SUCCESS">/pages/curp81.jsp</result>
+            <result name="TERMINO">/pages/curpok.jsp</result>			              
+            <result name="ERROR1">/pages/curp8.jsp</result>
+            <result name="ERROR2">/pages/curp81.jsp</result>
+        </action>
+        
+        
+        <action name="miiniciodesc" class="actioncurp.iniciocurp2" method="miinicio8">
+            <result name="SUCCESS">/pages/curp9.jsp</result>			              
+            <result name="ERROR">/pages/curp9.jsp</result>
+        </action>
+        
+        <action name="buscarcurps9" class="actioncurp.iniciocurp2" method="buscarcurps9">
+            <result name="SUCCESS">/pages/curp91.jsp</result>
+            <result name="TERMINO">/pages/curpok.jsp</result>			              
+            <result name="ERROR1">/pages/curp9.jsp</result>
+            <result name="ERROR2">/pages/curp91.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        
+        
+        <action name="miinicio_asc" class="actioncurp.iniciocurp2" method="miinicio8">
+            <result name="SUCCESS">/pages/curp8asc.jsp</result>			              
+            <result name="ERROR">/pages/curp8asc.jsp</result>
+        </action>
+        
+        <action name="buscarcurps8asc" class="actioncurp.iniciocurp2" method="buscarcurps8asc">
+            <result name="SUCCESS">/pages/curp81asc.jsp</result>
+            <result name="TERMINO">/pages/curpok.jsp</result>			              
+            <result name="ERROR1">/pages/curp8asc.jsp</result>
+            <result name="ERROR2">/pages/curp81asc.jsp</result>
+        </action>
+        
+        
+        <action name="miinicio_desc" class="actioncurp.iniciocurp2" method="miinicio8">
+            <result name="SUCCESS">/pages/curp9desc.jsp</result>			              
+            <result name="ERROR">/pages/curp9desc.jsp</result>
+        </action>
+        
+        <action name="buscarcurps9desc" class="actioncurp.iniciocurp2" method="buscarcurps9desc">
+            <result name="SUCCESS">/pages/curp91desc.jsp</result>
+            <result name="TERMINO">/pages/curpok.jsp</result>			              
+            <result name="ERROR1">/pages/curp9desc.jsp</result>
+            <result name="ERROR2">/pages/curp91desc.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </package>
+</struts>
+
